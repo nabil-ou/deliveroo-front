@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Restaurant from "./components/Restaurant";
+import Header from "./components/Header";
 import Categorie from "./components/Categorie";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <span>En cours de chargement... </span>
   ) : (
     <div>
-      <Restaurant restaurant={data.restaurant} />
+      <Header restaurant={data.restaurant} />
       <div className="Content">
         <div className="Content--center">
           <div className="Menu">
