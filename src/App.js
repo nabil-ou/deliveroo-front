@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Header from "./components/Header";
 import Categorie from "./components/Categorie";
+import Footer from "./components/Footer";
 
 function App() {
   const [data, setData] = useState({});
@@ -31,6 +32,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
