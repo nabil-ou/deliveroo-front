@@ -1,11 +1,17 @@
 import React from "react";
 
-const Menu = ({ meals }) => {
+const Menu = ({ meals, addMenu }) => {
   return (
     <div className="MenuItems--items">
       {meals.map((meal, index) => {
         return (
-          <div className="MenuItem">
+          <div
+            key={index}
+            className="MenuItem"
+            onClick={() => {
+              addMenu(meal.id);
+            }}
+          >
             <div className="MenuItem--card">
               <div className="MenuItem--texts">
                 <h3>{meal.title}</h3>
